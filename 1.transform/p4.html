@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            transition: all 3s;
+        
+        }
+        .b1{
+            background-color: red;
+        }
+        .b2{
+            background-color: yellowgreen;
+        }
+        .b3{
+            background-color: violet;
+        }
+        .b1:hover{transform: rotate(90deg); }
+        .b2:hover{transform: rotateX(50deg); }
+        .b3:hover{transform: rotateY(60deg); }
+    </style>
+</head>
+<body>
+    <h1>rotate, rotateX, rotateY</h1>
+
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+</body>
+</html>
