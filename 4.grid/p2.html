@@ -8,27 +8,23 @@
         *{box-sizing: border-box;}
         body{
             width: 100%;
+            height: 100%;
             padding: 0;
             margin: 0;
             overflow-x: hidden;
-            height: 100%;
         }
-
         .container{
-            height: 100%;
-            width: 100%;
-            background-color: red;
-            overflow-x: hidden;
-            display: flex;
-            gap: 5px;
-            flex-flow: row;/* row, column, row-reverse, column-reverse*/
-            flex-wrap: wrap;/* default no wrap, wrap, wrap-reverse*/
-           
+            display: grid;
+            padding: 20px;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+            grid-template-rows: 200px 200px 200px 200px 1fr;
         }
         .container div{
-            width: 300px;
-            height: 250px;
-            background-color: cyan;
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            padding: 20px ;
         }
     </style>
 </head>
@@ -46,6 +42,10 @@
         <div>10</div>
         <div>11</div>
         <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
     </section>
 </body>
 </html>
