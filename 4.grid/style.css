@@ -46,11 +46,14 @@
         }
         .equal{
             background-color: red !important;
+            
         }
         .clr{
             background-color: green !important;
         }
         h1.inp{
             color: white;
+            text-align: end;
+            grid-row: span 2;
             
         }

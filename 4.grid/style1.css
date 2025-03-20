@@ -1,0 +1,47 @@
+*{box-sizing: border-box;}
+        body{
+            width:100%;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            
+        }
+        .container{
+            height: 100vh;
+            width: 300px;
+            display: grid   ;
+            align-items: center;
+            justify-content: center;
+            
+            
+            
+        }
+        
+        .keygroup{
+            display: grid;
+            grid-template:repeat(6,60px) / repeat(4,1fr) ;
+            grid-gap: 5px;
+            
+        }
+        .keygroup .btn{
+
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.3rem;
+            background-color: black;
+            color: white;
+            border-radius: 4px ;
+            
+        }
+        .plus{grid-row  : span 2;
+            background-color: black;
+            color: white;
+        }
+            
+        .enter{grid-row: span 2;
+            background-color: black;
+            color: white;}
+        .op{grid-column: span 2;
+            background-color: black;
+            color: white;}

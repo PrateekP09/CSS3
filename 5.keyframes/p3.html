@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            animation-name: bounce; /*animation name*/
+            animation-duration: 4s; /*time to complete one cycle*/
+            animation-timing-function: steps(5);/* animation func name*/
+            animation-iteration-count: 5;/* number of animation cycles*/
+        }
+        @keyframes bounce {
+            0%{
+                transform: translate(0px,0px);
+            }
+            20%{
+                transform: translate(40vh,80vh);
+            }
+            60%{
+                transform: translate(80vh,80px);
+            }
+            80%{
+                transform: translate(80vw,80vh);
+            }
+            100%{
+                transform: translate(80vw,80px);
+                background-color: green;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>@keyframes - % selectors</h1>
+
+    <div class="ball"></div>
+</body>
+</html>
