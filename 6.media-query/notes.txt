@@ -1,0 +1,17 @@
+media  query related to mobile resposive design
+
+1.mobile 320px- 470px
+2.tab   47- 990px
+  horizontal
+  vertical
+3.notebooks  - 990px - 1024 px
+4.laptops   1024px - 1440
+5.Desktops - 1440 - 2560(4k)
+
+1.width and height (px) resolution
+2.color depth
+3.pixel depth
+
+orientation
+  portrait- vertical
+  landscape - horizontal
