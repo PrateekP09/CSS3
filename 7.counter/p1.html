@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{box-sizing: border-box;}
+
+        body{
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            padding: 20px;
+            counter-reset: ch;
+            overflow-x: hidden;
+            
+        }
+        h3::before{
+            counter-increment: ch;
+            content: counter(ch) " . "; 
+            color: red;
+        }
+
+        h3{
+            counter-reset: tp;
+        }
+        h5::before{
+            counter-increment: tp;
+            content: counter(ch) " . " counter(tp);
+            padding-left: 2rem;
+            color: blue;
+        }
+        h5{
+            counter-reset: p;
+        }
+        p::before{
+            counter-increment: p;
+            content: counter(ch) " . " counter(tp) " . " counter(p) ;
+            padding-left: 4rem;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>HTML</h3>
+            <h5>Header Tags</h5>
+                <p>paragraph tag</p>
+            <h5>Format Tags</h5>
+                <p>bold</p>
+                <p>italic</p>
+                <p>underline</p>
+            <h5>Table</h5>
+                <p>tr table row</p>
+                <p>th table head</p>
+                <p>td table data</p>
+            <h5>List</h5>
+        <H3>CSS</H3>
+             <h5>Selectors</h5>
+                <p>universal</p>
+                <p>basic(class/id/tag)</p>
+                <p>combinators</p>
+                <p>attribute</p>
+                <p>pseudo</p>
+
+            <h5>css2</h5>
+                <p>background</p>
+                <p>border</p>
+                <p>color</p>
+
+             <h5>css3</h5>
+                <p>transform</p>
+                <p>transition</p>
+                <p>keyframes</p>
+                <p>media query</p>
+       
+        <H3>JAVASCRIPT</H3>
+            <h5>BAsic</h5>
+                <p>variables</p>
+                <p>data types</p>
+                <p>condition</p>
+                <p>loops</p>
+
+            <h5>OOJS</h5>
+                <p>object</p>
+                <p>object method</p>
+                <p>constructors</p>
+                <p>oops concepts</p>
+
+            <h5>Ecma Script</h5>
+                <p>spread and rest rest operator</p>
+                <p>web apis</p>
+                <p>promise constructors</p>
+
+            <h5>Advance Js</h5>
+                <p>Rest ApI</p>
+
+        <H3>REACTJS</H3>
+            <h5>Components</h5>
+                <p>functional</p>
+                <p>class</p>
+            <h5>Data Binding</h5>
+                <p>variable binding</p>
+                <p>method binding</p>
+
+    </div>
+</body>
+</html>
